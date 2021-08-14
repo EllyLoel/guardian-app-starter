@@ -14,7 +14,7 @@ const searchHandler = async (req, res) => {
   const apiResults = searchResults.data.response.results.map(
     ({ id, webTitle, webUrl, webPublicationDate, sectionName }) => {
       return {
-        id: id,
+        id,
         title: webTitle,
         url: webUrl,
         date: webPublicationDate,

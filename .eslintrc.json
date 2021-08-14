@@ -1,9 +1,18 @@
 {
-  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "extends": [
+    "airbnb",
+    "plugin:@next/next/recommended",
+    "plugin:prettier/recommended",
+    "next"
+  ],
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-expressions": "off",
+    "jsx-a11y/label-has-associated-control": "off"
   },
   "parserOptions": {
     "quotes": "single"
